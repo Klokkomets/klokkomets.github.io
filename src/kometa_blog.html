@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Название вкладки -->
+    <title>Блог о мифологии | Мифопедия</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style_blog.css">
+    <link rel="stylesheet" href="css/style_navigation.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Мифо<span>педия</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="klok_bogi.html">Боги</a></li>
+                        <li><a href="klok_essence.html">Существа</a></li>
+                        <li><a href="kometa_blog.html">Блог</a></li>
+                        <li><a href="kometa_mythology.html">Мифология</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Поиск">
+                    <button id="search-button">Найти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Уведомление о поиске -->
+    <div class="search-notification" id="search-notification">
+        <div id="search-message">Результаты поиска:</div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <!-- Путь -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Главная</a> > Блог
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <div class="main-content">
+            <div class="content">
+                <!-- Заголовок страницы -->
+                <div class="page-header">
+                    <h1 class="page-title">Блог о мифологии</h1>
+                    <p class="page-subtitle">Интересные статьи, исследования и новости из мира мифологии</p>
+                </div>
+
+                <!-- Фильтры -->
+                <section class="filters">
+                    <h3 class="filter-title">Категории статей:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Все статьи</button>
+                        <button class="filter-btn" data-filter="greek">Греческая</button>
+                        <button class="filter-btn" data-filter="norse">Скандинавская</button>
+                        <button class="filter-btn" data-filter="egyptian">Египетская</button>
+                        <button class="filter-btn" data-filter="slavic">Славянская</button>
+                        <button class="filter-btn" data-filter="research">Исследования</button>
+                    </div>
+                </section>
+
+                <!-- Карточки статей -->
+                <section class="content-section">
+                    <h2 class="section-title">Последние статьи</h2>
+
+                    <div class="blog-grid">
+                        <!-- Статьи -->
+                        <div class="blog-card" data-category="greek">
+                            <div class="blog-img" style="background-image: url('img/W_Olimp.jpg');">
+                                <span class="blog-category">Греческая</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Тайны олимпийских богов: что скрывают мифы</h3>
+                                <p>Глубокий анализ символики и скрытых смыслов в греческой мифологии. Как мифы отражают
+                                    человеческую психологию и социальные отношения.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> 15 октября 2025</span>
+                                    <span><i class="far fa-clock"></i> 8 мин чтения</span>
+                                </div>
+                                <a href="#" class="read-more">Читать далее →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card" data-category="norse">
+                            <div class="blog-img" style="background-image: url('img/W_Pagnarek.jfif');">
+                                <span class="blog-category">Норвежская</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Рагнарёк: конец света по-скандинавски</h3>
+                                <p>Подробный размотр пророчества о конце мира в скандинавской мифологии. Какие события
+                                    предшествуют Рагнарёку и что происходит после.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> 12 октября 2025</span>
+                                    <span><i class="far fa-clock"></i> 6 мин чтения</span>
+                                </div>
+                                <a href="#" class="read-more">Читать далее →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card" data-category="egyptian">
+                            <div class="blog-img" style="background-image: url('img/W_books_kill.jpg');">
+                                <span class="blog-category">Египетская</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Книга Мертвых: руководство по загробной жизни</h3>
+                                <p>Исследование древнеегипетских представлений о смерти и загробном мире. Как "Книга
+                                    Мертвых" помогала душам пройти суд Осириса.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> 8 октября 2025</span>
+                                    <span><i class="far fa-clock"></i> 10 мин чтения</span>
+                                </div>
+                                <a href="#" class="read-more">Читать далее →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card" data-category="slavic">
+                            <div class="blog-img" style="background-image: url('img/W_Dyxu.webp');">
+                                <span class="blog-category">Славянская</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Славянские духи природы: от домового до лешего</h3>
+                                <p>Подробный обзор славянских духов и их роли в повседневной жизни древних славян. Как
+                                    эти верования сохранились в народной культуре.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> 5 октября 2025</span>
+                                    <span><i class="far fa-clock"></i> 7 мин чтения</span>
+                                </div>
+                                <a href="#" class="read-more">Читать далее →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card" data-category="research">
+                            <div class="blog-img" style="background-image: url('img/W_Apxetip.webp');">
+                                <span class="blog-category">Исследования</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Архетипы в мифологии: теория Юнга</h3>
+                                <p>Как теория Карла Густава Юнга помогает понять универсальные паттерны в мифах разных
+                                    культур. Анализ архетипов героя, тени и анимы.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> 1 октября 2025</span>
+                                    <span><i class="far fa-clock"></i> 12 мин чтения</span>
+                                </div>
+                                <a href="#" class="read-more">Читать далее →</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card" data-category="greek">
+                            <div class="blog-img" style="background-image: url('img/W_Gerou.webp');">
+                                <span class="blog-category">Греческая</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Герои Древней Греции: между людьми и богами</h3>
+                                <p>Исследование феномена греческих героев. Как полубоги становились культурными
+                                    символами и что их истории говорят о человеческой природе.</p>
+                                <div class="blog-meta">
+                                    <span><i class="far fa-calendar"></i> 28 сентября 2025</span>
+                                    <span><i class="far fa-clock"></i> 9 мин чтения</span>
+                                </div>
+                                <a href="#" class="read-more">Читать далее →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Страницы -->
+                    <div class="pagination">
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">→</button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Боковая панель -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Категории</h3>
+                <ul class="related-links">
+                    <li><a href="kometa_greece.html"><i class="fas fa-chevron-right"></i> Греческая мифология (12)</a>
+                    </li>
+                    <li><a href="kometa_viking.html"><i class="fas fa-chevron-right"></i> Скандинавская мифология
+                            (8)</a></li>
+                    <li><a href="kometa_egypit.html"><i class="fas fa-chevron-right"></i> Египетская мифология (7)</a>
+                    </li>
+                    <li><a href="kometa_slav.html"><i class="fas fa-chevron-right"></i> Славянская мифология (5)</a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Исследования (15)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Новости (3)</a></li>
+                </ul>
+
+                <div class="popular-posts">
+                    <h3 class="sidebar-title">Популярные статьи</h3>
+
+                    <div class="popular-post">
+                        <div class="popular-post-img" style="background-image: url('img/W_Olimp.jpg');">
+                        </div>
+                        <div class="popular-post-content">
+                            <h4>Тайны олимпийских богов</h4>
+                            <span>15 мая 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="popular-post">
+                        <div class="popular-post-img" style="background-image: url('img/W_Pagnarek.jfif');">
+                        </div>
+                        <div class="popular-post-content">
+                            <h4>Рагнарёк: конец света по-скандинавски</h4>
+                            <span>12 мая 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="popular-post">
+                        <div class="popular-post-img" style="background-image: url('img/W_books_kill.jpg');">
+                        </div>
+                        <div class="popular-post-content">
+                            <h4>Книга Мертвых: руководство по загробной жизни</h4>
+                            <span>8 мая 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsletter-box">
+                    <h3>Подписка на новости</h3>
+                    <p>Получайте уведомления о новых статьях и эксклюзивные материалы</p>
+                    <input type="email" placeholder="Ваш email">
+                    <button>Подписаться</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Нижняя часть -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Мифопедия</h3>
+          <p>Исследуйте богов, героев и мифических существ из разных культур вместе с нами.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Мифология</h3>
+          <ul>
+            <li><a href="kometa_greece.html">Греческая</a></li>
+            <li><a href="kometa_viking.html">Скандинавская</a></li>
+            <li><a href="kometa_egypit.html">Египетская</a></li>
+            <li><a href="kometa_slav.html">Славянская</a></li>
+            <li><a href="kometa_jopan.html">Японская</a></li>
+            <li><a href="kometa_china.html">Китайская</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Ресурсы</h3>
+          <ul>
+            <li><a href="kometa_blog.html">Блог</a></li>
+            <li><a href="#">Энциклопедия</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>О нас</h3>
+          <ul>
+            <li><a href="kometa_contacts.html">Контакты</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Условия использования</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Мифопедия. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключаем JS -->
+  <script src="js/script_blog.js"></script>
+</body>
+
+</html>
