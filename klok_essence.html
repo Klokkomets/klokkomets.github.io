@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Название вкладки -->
+    <title>Мифические существа | Мифопедия</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style_japan.css">
+    <link rel="stylesheet" type="text/css" href="css/style_navigation.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Мифо<span>педия</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="klok_bogi.html">Боги</a></li>
+                        <li><a href="klok_essence.html">Существа</a></li>
+                        <li><a href="kometa_blog.html">Блог</a></li>
+                        <li><a href="kometa_mythology.html">Мифология</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Поиск">
+                    <button id="search-button">Найти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Уведомление о поиске -->
+    <div class="search-notification" id="search-notification">
+        <div id="search-message">Результаты поиска:</div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <!-- Путь -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Главная</a> > Существа
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <div class="main-content">
+            <div class="content">
+                <!-- Заголовок страницы -->
+                <div class="page-headerK">
+                    <h1 class="page-titleK">Мифические существа</h1>
+                    <p class="page-subtitleK">Исследуйте удивительный мир мифических существ из разных культур</p>
+                </div>
+
+                <!-- Фильтры -->
+                <section class="filters">
+                    <h3 class="filter-title">Фильтровать по мифологии:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Все существа</button>
+                        <button class="filter-btn" data-filter="greek">Греческая</button>
+                        <button class="filter-btn" data-filter="norse">Скандинавская</button>
+                        <button class="filter-btn" data-filter="slavic">Славянская</button>
+                        <button class="filter-btn" data-filter="japanese">Японская</button>
+                        <button class="filter-btn" data-filter="celtic">Кельтская</button>
+                    </div>
+                </section>
+
+                <!-- Карточки существ -->
+                <section class="content-section">
+                    <h2 class="section-title">Легендарные существа</h2>
+                    <p>Откройте для себя удивительных существ, которые населяют мифы и легенды разных народов. От
+                        благородных существ до ужасных чудовищ - каждая культура создала уникальных созданий, отражающих
+                        ее страхи, надежды и представления о мире.</p>
+
+                    <div class="creatures-grid">
+                        <!-- Греческие существа -->
+                        <div class="creature-card" data-mythology="greek">
+                            <div class="creature-img" style="background-image: url('img/W_Minotavr.jpg');">
+                                <span class="creature-mythology">Греческая</span>
+                                <span class="creature-type">Чудовище</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Минотавр</h3>
+                                <div class="creature-category">Человек-бык</div>
+                                <span class="danger-level danger-high">Высокая опасность</span>
+                                <p>Существо с телом человека и головой быка, обитавшее в Лабиринте на Крите. Пожирал
+                                    людей, которых ему приносили в жертву.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Сила</span>
+                                    <span class="attribute">Лабиринт</span>
+                                    <span class="attribute">Жертвоприношение</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Минотавре →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="greek">
+                            <div class="creature-img" style="background-image: url('img/W_Kentavr.webp');">
+                                <span class="creature-mythology">Греческая</span>
+                                <span class="creature-type">Гибрид</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Кентавр</h3>
+                                <div class="creature-category">Получеловек-полулошадь</div>
+                                <span class="danger-level danger-medium">Средняя опасность</span>
+                                <p>Существа с телом лошади и торсом человека. Известны своей дикостью и любовью к вину,
+                                    но некоторые были мудрыми учителями.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Сила</span>
+                                    <span class="attribute">Стрельба из лука</span>
+                                    <span class="attribute">Мудрость</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Кентаврах →</a>
+                            </div>
+                        </div>
+
+                        <!-- Норвежские существа -->
+                        <div class="creature-card" data-mythology="norse">
+                            <div class="creature-img" style="background-image: url('img/W_Ermyngad.jfif');">
+                                <span class="creature-mythology">Скандинавская</span>
+                                <span class="creature-type">Чудовище</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Йормунганд</h3>
+                                <div class="creature-category">Мировой змей</div>
+                                <span class="danger-level danger-high">Высокая опасность</span>
+                                <p>Гигантский морской змей, дитя Локи. Настолько велик, что опоясывает весь мир, кусая
+                                    свой собственный хвост.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Гигантизм</span>
+                                    <span class="attribute">Яд</span>
+                                    <span class="attribute">Пророчество</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Йормунганде →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="norse">
+                            <div class="creature-img" style="background-image: url('img/W_Fernir.png');">
+                                <span class="creature-mythology">Скандинавская</span>
+                                <span class="creature-type">Чудовище</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Фенрир</h3>
+                                <div class="creature-category">Гигантский волк</div>
+                                <span class="danger-level danger-high">Высокая опасность</span>
+                                <p>Чудовищный волк, сын Локи. Был скован богами, но разорвет свои путы во время
+                                    Рагнарёка и поглотит Одина.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Сила</span>
+                                    <span class="attribute">Пророчество</span>
+                                    <span class="attribute">Разрушение</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Фенрире →</a>
+                            </div>
+                        </div>
+
+                        <!-- Славянские существа -->
+                        <div class="creature-card" data-mythology="slavic">
+                            <div class="creature-img" style="background-image: url('img/W_Leshui.jpg');">
+                                <span class="creature-mythology">Славянская</span>
+                                <span class="creature-type">Дух</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Леший</h3>
+                                <div class="creature-category">Хозяин леса</div>
+                                <span class="danger-level danger-medium">Средняя опасность</span>
+                                <p>Дух-хозяин леса в славянской мифологии. Может помогать людям, но также сбивать с пути
+                                    и пугать.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Изменение формы</span>
+                                    <span class="attribute">Навигация</span>
+                                    <span class="attribute">Природа</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Лешем →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="slavic">
+                            <div class="creature-img" style="background-image: url('img/W_Domovoi.jpg');">
+                                <span class="creature-mythology">Славянская</span>
+                                <span class="creature-type">Дух</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Домовой</h3>
+                                <div class="creature-category">Хозяин дома</div>
+                                <span class="danger-level danger-low">Низкая опасность</span>
+                                <p>Дух-хранитель дома и семьи. Помогает по хозяйству, но может и шалить, если чем-то
+                                    недоволен.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Защита</span>
+                                    <span class="attribute">Невидимость</span>
+                                    <span class="attribute">Хозяйство</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Домовом →</a>
+                            </div>
+                        </div>
+
+                        <!-- Японские существа -->
+                        <div class="creature-card" data-mythology="japanese">
+                            <div class="creature-img" style="background-image: url('img/W_Fox.jpg');">
+                                <span class="creature-mythology">Японская</span>
+                                <span class="creature-type">Дух</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Кицунэ</h3>
+                                <div class="creature-category">Лиса-оборотень</div>
+                                <span class="danger-level danger-medium">Средняя опасность</span>
+                                <p>Волшебные лисы, обладающие магическими способностями. Могут принимать человеческий
+                                    облик и живут очень долго.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Оборотничество</span>
+                                    <span class="attribute">Магия</span>
+                                    <span class="attribute">Долголетие</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Кицунэ →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="japanese">
+                            <div class="creature-img" style="background-image: url('img/W_Tengy.jpg');">
+                                <span class="creature-mythology">Японская</span>
+                                <span class="creature-type">Дух</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Тэнгу</h3>
+                                <div class="creature-category">Горный дух</div>
+                                <span class="danger-level danger-medium">Средняя опасность</span>
+                                <p>Горные духи с чертами человека и птицы. Искусные воины, могут быть как защитниками,
+                                    так и обманщиками.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Полёт</span>
+                                    <span class="attribute">Боевые искусства</span>
+                                    <span class="attribute">Магия</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Тэнгу →</a>
+                            </div>
+                        </div>
+
+                        <!-- Кельтские существа -->
+                        <div class="creature-card" data-mythology="celtic">
+                            <div class="creature-img" style="background-image: url('img/W_Banshi.jpg');">
+                                <span class="creature-mythology">Кельтская</span>
+                                <span class="creature-type">Фея</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Банши</h3>
+                                <div class="creature-category">Дух-предвестник</div>
+                                <span class="danger-level danger-low">Низкая опасность</span>
+                                <p>Женский дух в ирландском фольклоре, чей плач предвещает смерть в семье. Не причиняет
+                                    вреда, но пугает своим видом.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Пророчество</span>
+                                    <span class="attribute">Невидимость</span>
+                                    <span class="attribute">Плач</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Банши →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="celtic">
+                            <div class="creature-img" style="background-image: url('img/W_Kelpi.jpg');">
+                                <span class="creature-mythology">Кельтская</span>
+                                <span class="creature-type">Гибрид</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Келпи</h3>
+                                <div class="creature-category">Водяной дух</div>
+                                <span class="danger-level danger-high">Высокая опасность</span>
+                                <p>Водяной дух в шотландском фольклоре, обычно появляющийся в виде лошади. Заманивает
+                                    людей в воду и топит их.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Оборотничество</span>
+                                    <span class="attribute">Вода</span>
+                                    <span class="attribute">Обман</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Келпи →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="greek">
+                            <div class="creature-img" style="background-image: url('img/W_Gidra.jpg');">
+                                <span class="creature-mythology">Греческая</span>
+                                <span class="creature-type">Чудовище</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Гидра</h3>
+                                <div class="creature-category">Многоголовая змея</div>
+                                <span class="danger-level danger-high">Высокая опасность</span>
+                                <p>Чудовище с множеством змеиных голов. На месте отрубленной головы вырастают две новые.
+                                    Побеждена Гераклом.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Регенерация</span>
+                                    <span class="attribute">Яд</span>
+                                    <span class="attribute">Многоголовость</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Гидре →</a>
+                            </div>
+                        </div>
+
+                        <div class="creature-card" data-mythology="slavic">
+                            <div class="creature-img" style="background-image: url('img/W_Pysalka.jpg');">
+                                <span class="creature-mythology">Славянская</span>
+                                <span class="creature-type">Русалка</span>
+                            </div>
+                            <div class="creature-content">
+                                <h3>Русалка</h3>
+                                <div class="creature-category">Водяной дух</div>
+                                <span class="danger-level danger-medium">Средняя опасность</span>
+                                <p>Духи утопленниц, обитающие в водоемах. Могут быть как прекрасными девами, так и
+                                    уродливыми старухами.</p>
+                                <div class="creature-attributes">
+                                    <span class="attribute">Вода</span>
+                                    <span class="attribute">Пение</span>
+                                    <span class="attribute">Искушение</span>
+                                </div>
+                                <a href="#" class="read-more">Подробнее о Русалках →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Боковая панель -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Мифологии</h3>
+                <ul class="related-links">
+                    <li><a href="kometa_greece.html"><i class="fas fa-chevron-right"></i> Греческая мифология</a></li>
+                    <li><a href="kometa_viking.html"><i class="fas fa-chevron-right"></i> Скандинавская мифология</a>
+                    </li>
+                    <li><a href="kometa_slav.html"><i class="fas fa-chevron-right"></i> Славянская мифология</a></li>
+                    <li><a href="kometa_jopan.html"><i class="fas fa-chevron-right"></i> Японская мифология</a></li>
+                    <li><a href="kometa_china.html"><i class="fas fa-chevron-right"></i> Китайская мифология</a></li>
+                    <li><a href="kometa_egypit.html"><i class="fas fa-chevron-right"></i> Египетская мифология</a></li>
+                </ul>
+
+                <div class="creature-stats">
+                    <h3>Статистика существ</h3>
+                    <div class="stat-item">
+                        <span>Греческих существ:</span>
+                        <span class="stat-value">25+</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Норвежских существ:</span>
+                        <span class="stat-value">18+</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Славянских существ:</span>
+                        <span class="stat-value">30+</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Японских существ:</span>
+                        <span class="stat-value">40+</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Всего существ в базе:</span>
+                        <span class="stat-value">200+</span>
+                    </div>
+                </div>
+
+                <h3 class="sidebar-title" style="margin-top: 30px;">Типы существ</h3>
+                <ul class="related-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Духи природы (45)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Чудовища (38)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Гибриды (32)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Драконы (15)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Феи и духи (50)</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Нижняя часть -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Мифопедия</h3>
+                    <p>Исследуйте богов, героев и мифических существ из разных культур вместе с нами.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Мифология</h3>
+                    <ul>
+                        <li><a href="kometa_greece.html">Греческая</a></li>
+                        <li><a href="kometa_viking.html">Скандинавская</a></li>
+                        <li><a href="kometa_egypit.html">Египетская</a></li>
+                        <li><a href="kometa_slav.html">Славянская</a></li>
+                        <li><a href="kometa_jopan.html">Японская</a></li>
+                        <li><a href="kometa_china.html">Китайская</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="kometa_blog.html">Блог</a></li>
+                        <li><a href="#">Энциклопедия</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li><a href="kometa_contacts.html">Контакты</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Мифопедия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем JS -->
+    <script src="js/script_essence.js"></script>
+    <script src="js/script_japan.js"></script>
+</body>
+
+</html>

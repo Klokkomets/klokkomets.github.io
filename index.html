@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- npm run runDevServer -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Название вкладки -->
+  <title>Мифопедия - Энциклопедия мифологии</title>
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style_myth.css">
+  <link rel="stylesheet" type="text/css" href="css/style_navigation.css">
+</head>
+
+<body>
+  <!-- Навигация -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Мифо<span>педия</span></a>
+        <nav>
+          <ul>
+            <li><a href="klok_bogi.html">Боги</a></li>
+            <li><a href="klok_essence.html">Существа</a></li>
+            <li><a href="kometa_blog.html">Блог</a></li>
+            <li><a href="kometa_mythology.html">Мифология</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Поиск">
+          <button id="search-button">Найти</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Уведомление о поиске -->
+  <div class="search-notification" id="search-notification">
+    <div id="search-message">Результаты поиска:</div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  <!-- Приветсвенная часть -->
+  <section class="hero">
+    <div class="container">
+      <h1>Исследуйте мир мифологии</h1>
+      <p>Откройте для себя богов, героев и мифических существ из древних культур по всему миру</p>
+      <a href="C:\Users\489\Desktop\Site\src\kometa_test.html" class="cta-button">Проверь знания</a>
+    </div>
+  </section>
+
+  <!-- Основной контент -->
+  <main class="main-content">
+    <div class="container">
+      <!-- Популярная мифологии -->
+      <section class="popular-mythologies">
+        <h2 class="section-title">Популярная мифологии</h2>
+        <div class="mythologies">
+          <div class="mythology-card" data-search="Греческая мифология">
+            <div class="mythology-img" style="background-image: url('img/W_Greece.jpg');">
+            </div>
+            <div class="mythology-content">
+              <h3>Греческая мифология</h3>
+              <p>Боги Олимпа, герои и эпические сказания Древней Греции</p>
+              <a href="kometa_greece.html" class="read-more">Исследовать →</a>
+            </div>
+          </div>
+
+          <div class="mythology-card" data-search="Скандинавская мифология">
+            <div class="mythology-img" style="background-image: url('img/W_Viking.jpg');">
+            </div>
+            <div class="mythology-content">
+              <h3>Скандинавская мифология</h3>
+              <p>Мир богов, героев и чудовищ, где в тени Иггдрасиля плетутся нити судьбы</p>
+              <a href="kometa_viking.html" class="read-more">Исследовать →</a>
+            </div>
+          </div>
+
+          <div class="mythology-card" data-search="Египетская мифология">
+            <div class="mythology-img" style="background-image: url('img/W_Egypt.jpg');">
+            </div>
+            <div class="mythology-content">
+              <h3>Египетская мифология</h3>
+              <p>Боги Нила, фараоны и загробная жизнь Древнего Египта</p>
+              <a href="kometa_egypit.html" class="read-more">Исследовать →</a>
+            </div>
+          </div>
+
+          <div class="mythology-card" data-search="Славянская мифология ">
+            <div class="mythology-img" style="background-image: url('img/W_Slav.jpg');">
+            </div>
+            <div class="mythology-content">
+              <h3>Славянская мифология</h3>
+              <p>Мир древних преданий, где в шелесте лесов и журчании рек звучат голоса богов и духов</p>
+              <a href="kometa_slav.html" class="read-more">Исследовать →</a>
+            </div>
+          </div>
+
+          <div class="mythology-card" data-search="Японская мифология">
+            <div class="mythology-img" style="background-image: url('img/W_Japan.jpg');">
+            </div>
+            <div class="mythology-content">
+              <h3>Японская мифология</h3>
+              <p>Аматэрасу, Цукуёми, Сусаноо, неотразимая Нагицунэ и множество таинсвеных Ёкаев</p>
+              <a href="kometa_jopan.html" class="read-more">Исследовать →</a>
+            </div>
+          </div>
+
+          <div class="mythology-card" data-search="Китайская мифология">
+            <div class="mythology-img" style="background-image: url('img/W_China.jpg');">
+            </div>
+            <div class="mythology-content">
+              <h3>Китайская мифология</h3>
+              <p>Небесные боги, мудрые драконы и герои‑полубоги творящие судьбу мира</p>
+              <a href="kometa_china.html" class="read-more">Исследовать →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Избранные боги -->
+      <section class="featured-gods">
+        <h2 class="section-title">Известные боги и существа</h2>
+        <div class="gods-grid">
+          <div class="god-card" data-search="Зевес">
+            <div class="god-img" style="background-image: url('img/W_Zeus.jpg');">
+            </div>
+            <div class="god-content">
+              <h3>Зевс</h3>
+              <p>Верховный бог греческого пантеона, бог неба и грома</p>
+            </div>
+          </div>
+
+          <div class="god-card" data-search="Один">
+            <div class="god-img" style="background-image: url('img/W_Odin.webp');">
+            </div>
+            <div class="god-content">
+              <h3>Один</h3>
+              <p>Верховный бог в скандинавской мифологии, бог мудрости и войны</p>
+            </div>
+          </div>
+
+          <div class="god-card" data-search="Ра">
+            <div class="god-img" style="background-image: url('img/W_Pa.webp');">
+            </div>
+            <div class="god-content">
+              <h3>Ра</h3>
+              <p>Бог солнца в древнеегипетской мифологии</p>
+            </div>
+          </div>
+
+          <div class="god-card" data-search="Перун">
+            <div class="god-img" style="background-image: url('img/W_Peryn.jpg');">
+            </div>
+            <div class="god-content">
+              <h3>Перун</h3>
+              <p>Бог-громовержец в славянской мифологии</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Нижняя часть -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Мифопедия</h3>
+          <p>Исследуйте богов, героев и мифических существ из разных культур вместе с нами.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Мифология</h3>
+          <ul>
+            <li><a href="kometa_greece.html">Греческая</a></li>
+            <li><a href="kometa_viking.html">Скандинавская</a></li>
+            <li><a href="kometa_egypit.html">Египетская</a></li>
+            <li><a href="kometa_slav.html">Славянская</a></li>
+            <li><a href="kometa_jopan.html">Японская</a></li>
+            <li><a href="kometa_china.html">Китайская</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Ресурсы</h3>
+          <ul>
+            <li><a href="kometa_blog.html">Блог</a></li>
+            <li><a href="#">Энциклопедия</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>О нас</h3>
+          <ul>
+            <li><a href="kometa_contacts.html">Контакты</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Условия использования</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Мифопедия. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключаем JS -->
+  <script src="js/script_myth.js"></script>
+</body>
+
+</html>

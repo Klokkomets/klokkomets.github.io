@@ -1,0 +1,165 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Приветсвенная часть */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #D2691E;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #B8860B;
+}
+
+/* Основной контент */
+.main-content {
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #D2691E;
+    margin: 10px auto;
+}
+
+/* Карточки мифологий */
+.mythologies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.mythology-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.mythology-card:hover {
+    transform: translateY(-10px);
+}
+
+.mythology-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.mythology-content {
+    padding: 20px;
+}
+
+.mythology-content h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mythology-content p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.read-more {
+    color: #D2691E;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Боги и существа */
+.featured-gods {
+    margin-bottom: 60px;
+}
+
+.gods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.god-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.god-img {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.god-content {
+    padding: 15px;
+}
+
+.god-content h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.god-content p {
+    color: #666;
+    font-size: 14px;
+}
+

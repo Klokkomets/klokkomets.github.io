@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Название вкладки -->
+    <title>Все мифологии мира | Мифопедия</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style_mythology.css">
+    <link rel="stylesheet" type="text/css" href="css/style_navigation.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Мифо<span>педия</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="klok_bogi.html">Боги</a></li>
+                        <li><a href="klok_essence.html">Существа</a></li>
+                        <li><a href="kometa_blog.html">Блог</a></li>
+                        <li><a href="kometa_mythology.html">Мифология</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Поиск">
+                    <button id="search-button">Найти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Уведомление о поиске -->
+    <div class="search-notification" id="search-notification">
+        <div id="search-message">Результаты поиска:</div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <!-- Путь -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Главная</a> > Все мифологии
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <div class="main-content">
+            <div class="content">
+                <!-- Заголовок страницы -->
+                <div class="page-header">
+                    <h1 class="page-title">Все мифологии мира</h1>
+                    <p class="page-subtitle">Исследуйте богатое наследие мифологических традиций со всего мира</p>
+                </div>
+
+                <!-- Фильтры -->
+                <section class="filters">
+                    <h3 class="filter-title">Фильтровать по региону:</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Все</button>
+                        <button class="filter-btn" data-filter="europe">Европа</button>
+                        <button class="filter-btn" data-filter="asia">Азия</button>
+                        <button class="filter-btn" data-filter="africa">Африка</button>
+                        <button class="filter-btn" data-filter="americas">Америка</button>
+                    </div>
+                </section>
+
+                <!-- Карточки мифологий -->
+                <section class="content-section">
+                    <h2 class="section-title">Мифологии мира</h2>
+                    <p>Откройте для себя удивительный мир мифологий разных народов. Каждая культура создала уникальную
+                        систему верований, богов и легенд, отражающую ее историю, ценности и представления о мире.</p>
+
+                    <div class="mythologies-grid">
+                        <!-- Европейские мифологии -->
+                        <div class="mythology-card" data-region="europe">
+                            <div class="mythology-img" style="background-image: url('img/W_Greece.jpg');">
+                                <span class="mythology-region">Европа</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Греческая мифология</h3>
+                                <p>Боги Олимпа, герои и эпические сказания Древней Греции</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 12+</span>
+                                    <span>Героев: 20+</span>
+                                </div>
+                                <a href="kometa_greece.html" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <div class="mythology-card" data-region="europe">
+                            <div class="mythology-img" style="background-image: url('img/W_Viking.jpg');">
+                                <span class="mythology-region">Европа</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Скандинавская мифология</h3>
+                                <p>Викинги, асы, ваны и скандинавские саги</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 9+</span>
+                                    <span>Миры: 9</span>
+                                </div>
+                                <a href="kometa_viking.html" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <div class="mythology-card" data-region="europe">
+                            <div class="mythology-img" style="background-image: url('img/W_Slav.jpg');">
+                                <span class="mythology-region">Европа</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Славянская мифология</h3>
+                                <p>Боги, духи и легенды древних славян</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 10+</span>
+                                    <span>Духов: 20+</span>
+                                </div>
+                                <a href="kometa_slav.html" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <div class="mythology-card" data-region="europe">
+                            <div class="mythology-img" style="background-image: url('img/W_Keltskaia.jpg');">
+                                <span class="mythology-region">Европа</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Кельтская мифология</h3>
+                                <p>Друиды, феи и герои Ирландии и Британии</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 15+</span>
+                                    <span>Циклов: 4</span>
+                                </div>
+                                <a href="#" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <!-- Азиатские мифологии -->
+                        <div class="mythology-card" data-region="asia">
+                            <div class="mythology-img" style="background-image: url('img/W_Japan.jpg');">
+                                <span class="mythology-region">Азия</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Японская мифология</h3>
+                                <p>Ками, синтоизм и легенды Страны восходящего солнца</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 8+</span>
+                                    <span>Существ: 30+</span>
+                                </div>
+                                <a href="kometa_jopan.html" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <div class="mythology-card" data-region="asia">
+                            <div class="mythology-img" style="background-image: url('img/W_China.jpg');">
+                                <span class="mythology-region">Азия</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Китайская мифология</h3>
+                                <p>Боги, драконы и философия древнего Китая</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 10+</span>
+                                    <span>Династий: 5+</span>
+                                </div>
+                                <a href="kometa_china.html" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <div class="mythology-card" data-region="asia">
+                            <div class="mythology-img" style="background-image: url('img/W_India.jpg');">
+                                <span class="mythology-region">Азия</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Индийская мифология</h3>
+                                <p>Боги индуизма, эпические поэмы и аватары</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 33+</span>
+                                    <span>Аватар: 10</span>
+                                </div>
+                                <a href="#" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <!-- Африканские мифологии -->
+                        <div class="mythology-card" data-region="africa">
+                            <div class="mythology-img" style="background-image: url('img/W_Egypt.jpg');">
+                                <span class="mythology-region">Африка</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Египетская мифология</h3>
+                                <p>Боги Нила, фараоны и загробная жизнь</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 15+</span>
+                                    <span>Династий: 30+</span>
+                                </div>
+                                <a href="kometa_egypit.html" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <!-- Американские мифологии -->
+                        <div class="mythology-card" data-region="americas">
+                            <div class="mythology-img" style="background-image: url('img/W_Atctek.jpg');">
+                                <span class="mythology-region">Америка</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Ацтекская мифология</h3>
+                                <p>Боги, ритуалы и мифы Мезоамерики</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 10+</span>
+                                    <span>Солнц: 5</span>
+                                </div>
+                                <a href="#" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+
+                        <div class="mythology-card" data-region="americas">
+                            <div class="mythology-img" style="background-image: url('img/W_Inki.webp');">
+                                <span class="mythology-region">Америка</span>
+                            </div>
+                            <div class="mythology-content">
+                                <h3>Инкская мифология</h3>
+                                <p>Боги Анд и империя четырех сторон света</p>
+                                <div class="mythology-stats">
+                                    <span>Богов: 8+</span>
+                                    <span>Регионов: 4</span>
+                                </div>
+                                <a href="#" class="read-more">Исследовать →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Боковая панель -->
+            <aside class="sidebar">
+                <h3 class="sidebar-title">Популярные мифологии</h3>
+                <ul class="related-links">
+                    <li><a href="kometa_greece.html"><i class="fas fa-chevron-right"></i> Греческая мифология</a></li>
+                    <li><a href="kometa_viking.html"><i class="fas fa-chevron-right"></i> Скандинавская мифология</a>
+                    </li>
+                    <li><a href="kometa_egypit.html"><i class="fas fa-chevron-right"></i> Египетская мифология</a></li>
+                    <li><a href="kometa_jopan.html"><i class="fas fa-chevron-right"></i> Японская мифология</a></li>
+                    <li><a href="kometa_slav.html"><i class="fas fa-chevron-right"></i> Славянская мифология</a></li>
+                </ul>
+
+                <div class="fact-box">
+                    <div class="fact-title">Факт дня</div>
+                    <p>В скандинавской мифологии существует 9 миров, соединенных мировым древом Иггдрасиль, включая мир
+                        людей (Мидгард) и мир богов (Асгард).</p>
+                </div>
+
+                <h3 class="sidebar-title" style="margin-top: 30px;">Регионы мира</h3>
+                <ul class="related-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Европа (12)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Азия (8)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Африка (6)</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Америка (5)</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Нижняя часть -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Мифопедия</h3>
+                    <p>Исследуйте богов, героев и мифических существ из разных культур вместе с нами.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Мифология</h3>
+                    <ul>
+                        <li><a href="kometa_greece.html">Греческая</a></li>
+                        <li><a href="kometa_viking.html">Скандинавская</a></li>
+                        <li><a href="kometa_egypit.html">Египетская</a></li>
+                        <li><a href="kometa_slav.html">Славянская</a></li>
+                        <li><a href="kometa_jopan.html">Японская</a></li>
+                        <li><a href="kometa_china.html">Китайская</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Ресурсы</h3>
+                    <ul>
+                        <li><a href="kometa_blog.html">Блог</a></li>
+                        <li><a href="#">Энциклопедия</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li><a href="kometa_contacts.html">Контакты</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Мифопедия. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем JS -->
+    <script src="js/script_japan.js"></script>
+    <script src="js/script_mythology.js"></script>
+</body>
+
+</html>
