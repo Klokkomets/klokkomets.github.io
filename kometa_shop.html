@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style_shop.css">
+    <link rel="stylesheet" href="css/style_myth.css">
+    <link rel="stylesheet" href="css/style_navigation.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Мифо<span>педия</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="klok_bogi.html">Боги</a></li>
+                        <li><a href="klok_essence.html">Существа</a></li>
+                        <li><a href="kometa_blog.html">Блог</a></li>
+                        <li><a href="kometa_mythology.html">Мифология</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Поиск">
+                    <button id="search-button">Найти</button>
+                </div>
+                <div class="cart-icon" id="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="cart-count" id="cart-count">0</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Уведомление о поиске -->
+    <div class="search-notification" id="search-notification">
+        <div id="search-message">Результаты поиска:</div>
+        <div class="search-results" id="search-results"></div>
+    </div>
+
+    <!-- Приветсвенная часть -->
+    <section class="hero">
+        <h1>Откройте магию мифологии мира</h1>
+        <p>Коллекционные предметы, книги и украшения, вдохновленные богами и мифами</p>
+        <a href="#products" class="cta-button">Исследовать коллекцию</a>
+    </section>
+
+    <!-- База -->
+    <div class="container">
+        <section id="products">
+            <h2 class="section-title">Наши товары</h2>
+
+            <!-- Фильтр -->
+            <div class="filters">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Поиск товаров...">
+                </div>
+                <div class="category-filter">
+                    <button class="category-btn active" data-category="all">Все</button>
+                    <button class="category-btn" data-category="books">Книги</button>
+                    <button class="category-btn" data-category="figurines">Фигурки</button>
+                    <button class="category-btn" data-category="jewelry">Украшения</button>
+                    <button class="category-btn" data-category="art">Искусство</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-container">
+                <!-- Товары будут загружены через JavaScript -->
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <div class="cart-header">
+                <h2 class="section-title" style="text-align: left; padding-bottom: 0;">Ваша корзина</h2>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <div class="cart-count" id="cart-count-big">0</div>
+                </div>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Товары в корзине будут отображаться здесь -->
+                <p id="empty-cart-message" style="text-align: center; padding: 2rem;">Ваша корзина пуста</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total" id="cart-total">Итого: 0 руб.</div>
+                <button class="checkout-btn" id="checkout-btn">
+                    <i class="fas fa-credit-card"></i> Оформить заказ
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Нижняя часть -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Мифопедия</h3>
+          <p>Исследуйте богов, героев и мифических существ из разных культур вместе с нами.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Мифология</h3>
+          <ul>
+            <li><a href="kometa_greece.html">Греческая</a></li>
+            <li><a href="kometa_viking.html">Скандинавская</a></li>
+            <li><a href="kometa_egypit.html">Египетская</a></li>
+            <li><a href="kometa_slav.html">Славянская</a></li>
+            <li><a href="kometa_jopan.html">Японская</a></li>
+            <li><a href="kometa_china.html">Китайская</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Ресурсы</h3>
+          <ul>
+            <li><a href="kometa_blog.html">Блог</a></li>
+            <li><a href="#">Энциклопедия</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>О нас</h3>
+          <ul>
+            <li><a href="kometa_contacts.html">Контакты</a></li>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Условия использования</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2025 Мифопедия. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Подключаем JS -->
+    <script src="js/script_shop.js"></script>
+</body>
+
+</html>
